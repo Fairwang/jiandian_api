@@ -1,0 +1,10 @@
+#!/user/bin/python
+# -*- coding:utf-8 -*-
+import requests
+data={"username":"15356647052",
+      "password":"lGvH3DTGDmrN6pYnCHFqc2uGwpJ6kl22LUSxDnuzdbtIe1HIpPeWOLnjRwpNQ0rl+uU6kX2Rze38jIlaVYpDfGDt6fLklLvsseKfMMBrXiDaMSOEzNW/RUoZwTYCPJe5ABKCZhRF1CtG9kIHwNvohkqJPYiC61L3Le0r+75hPp4=",
+      "device_id":"Ap_1tfkRWS6uF1Ugd7jh64TaDeCVtxW3p5GvrwzR5ZFF"}
+r=requests.post("http://jdshop.shopjian.cn/public/index.php/api/index/login/dologin",data,)
+print(r.text)
+print r.json()
+
